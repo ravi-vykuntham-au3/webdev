@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS TASKS</title>
+    <style>
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #333;
+      }
+
+      .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .menu li {
+        margin: 0 15px;
+      }
+
+      .menu li a {
+        font-size: 18px;
+        font-weight: 500;
+        color: #333;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .menu li a:hover {
+        color: #0095ff;
+      }
+
+      /* Define the keyframes for the animation */
+      @keyframes shake {
+        0% {
+          transform: translateX(0);
+        }
+        10% {
+          transform: translateX(-10px) rotate(-5deg);
+        }
+        20% {
+          transform: translateX(10px) rotate(5deg);
+        }
+        30% {
+          transform: translateX(-10px) rotate(-5deg);
+        }
+        40% {
+          transform: translateX(10px) rotate(5deg);
+        }
+        50% {
+          transform: translateX(-10px) rotate(-5deg);
+        }
+        60% {
+          transform: translateX(10px) rotate(5deg);
+        }
+        70% {
+          transform: translateX(-10px) rotate(-5deg);
+        }
+        80% {
+          transform: translateX(10px) rotate(5deg);
+        }
+        90% {
+          transform: translateX(-10px) rotate(-5deg);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+      /* Apply the animation to the image */
+      img {
+        animation-name: shake;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>CSS Tasks</h2>
+    <ul>
+      <li>
+        <p>
+          Create a navigation bar: Design and code a navigation bar that can be
+          used on multiple pages of a website.
+        </p>
+        <nav class="navbar">
+          <a href="#" class="logo">Logo</a>
+          <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </li>
+      <li>
+        <p>
+          Create a CSS animation: Use CSS keyframes and animation properties to
+          create an animation effect on an element. You could animate a button,
+          text, or an image.
+        </p>
+        <img src="https://via.placeholder.com/150" alt="Example Image" />
+      </li>
+    </ul>
+  </body>
+</html>
